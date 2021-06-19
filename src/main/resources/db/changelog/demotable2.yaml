@@ -1,0 +1,20 @@
+databaseChangeLog:
+
+  - changeSet:
+      author: avneesh.singh
+      id: create-table-iot_logs
+      changes:
+        - createTable:
+            tableName: "iot_logs"
+            columns:
+              - column:
+                  name: id
+                  type: nvarchar(41)
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: tenant_id
+                  type: nvarchar(36)
+                  constraints:
+                    nullable: false

@@ -1,0 +1,12 @@
+databaseChangeLog:
+
+  - changeSet:
+      author: avneesh.singh
+      id: add-column-auditlogs
+      changes:
+        - addColumn:
+            tableName: audit_logs
+            columns:
+              - column:
+                  name: tenant_name
+                  type: nvarchar(41)

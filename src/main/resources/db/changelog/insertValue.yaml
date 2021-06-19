@@ -1,0 +1,15 @@
+databaseChangeLog:
+
+  - changeSet:
+      author: avneesh.singh
+      id: Insert-values-auditlogs
+      changes:
+        - insert:
+            tableName: AUDIT_LOGS
+            columns:
+              - column:
+                  name: ID
+                  value: 1
+              - column:
+                  name: TENANT_ID
+                  value: tenant1

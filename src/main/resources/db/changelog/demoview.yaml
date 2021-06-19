@@ -1,0 +1,12 @@
+databaseChangeLog:
+
+  - changeSet:
+      author: avneesh.singh
+      id: 1
+      runOnChange: true
+
+      changes:
+        - createView:
+            viewName: V_Audit_Logs
+            replaceIfExists: true
+            selectQuery: select "ID","TENANT_ID" from "AUDIT_LOGS"

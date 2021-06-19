@@ -1,0 +1,49 @@
+### Eclipse
+**/.project
+**/.classpath
+**/.settings/
+**/.factorypath
+
+### Che
+**/.che/
+
+### Jetbrains
+**/.idea/
+**/*.iml
+
+### Maven
+**/target/
+*.versionsBackup
+.mvn/maven.config
+**/coverage-failure.txt
+
+### macOS
+**/.DS_Store
+
+### node
+**/node/
+**/node_modules/
+**/package-lock.json
+
+### Logs
+**/logs/
+**/*.log
+**/*.log.*
+velocity.log
+
+### Archives
+**/*.tar.gz
+
+### Python
+.python-version
+
+### xmake
+.xmake/
+gen/
+import/
+
+### Test Resources
+**/test-output/
+
+### EnvFile
+**/*.env

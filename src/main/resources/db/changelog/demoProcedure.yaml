@@ -1,0 +1,17 @@
+databaseChangeLog:
+
+  - changeSet:
+      author: avneesh.singh
+      id: 1
+      runOnChange: true
+
+      changes:
+        - createProcedure::
+            procedureName: P_procedure
+            replaceIfExists: true
+            procedureBody: |-
+              CREATE OR REPLACE PROCEDURE testProcedure
+                  IS
+                  BEGIN
+                    select "ID","TENANT_ID" from "AUDIT_LOGS";
+                  END;

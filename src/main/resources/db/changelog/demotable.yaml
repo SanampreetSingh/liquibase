@@ -1,0 +1,20 @@
+databaseChangeLog:
+
+  - changeSet:
+      author: avneesh.singh
+      id: create-table-auditlogs
+      changes:
+        - createTable:
+            tableName: audit_logs
+            columns:
+              - column:
+                  name: id
+                  type: nvarchar(41)
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: tenant_id
+                  type: nvarchar(36)
+                  constraints:
+                    nullable: false

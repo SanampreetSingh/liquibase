@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - include:
+      file: /db/changelog/demotable.yaml
+  - include:
+      file: /db/changelog/demoview.yaml
+  - include:
+      file: /db/changelog/addcolumn.yaml
+  - include:
+      file: /db/changelog/demoProcedure.yaml
+  - include:
+      file: /db/changelog/insertValue.yaml
+  - include:
+      file: /db/changelog/demotable2.yaml
