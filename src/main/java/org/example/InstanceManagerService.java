@@ -1,3 +1,5 @@
+package org.example;
+
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sap.xsa.core.instancemanager.client.*;
